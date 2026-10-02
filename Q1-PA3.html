@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eater Bistro</title>
+    <style>
+        body{
+            background-color: rgb(111, 175, 228);
+            color: rgb(49, 142, 129);
+            margin: 0;
+        }
+
+        .hero-image{
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Heavens_Gate_and_The_Pink_Panther.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            padding: 25%;
+        }
+
+        .hero-text{
+            text-align: center;
+        }
+
+       .button{
+        background-color: rgb(243, 3, 3);
+       }
+
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Eater Bistro</h1> 
+        </div>
+
+    </div>
+    
+
+    
+    <p>
+        Our 12" wood-fired pizzas are avaiable for delivery. Build your custom pizza and we'll deliver it within an hour.
+    </p>
+   
+
+    <form>
+         <!-- CUSTOMER INFO -->
+        <fieldset>
+            <legend>Your Information</legend>
+            <label for="fname"> Name:</label>
+            <input id="fname" type="text">
+            <br>
+
+             <label for="addr"> Address:</label>
+            <input id="addr" type="full name">
+            <br>
+
+            <label for="tel"> Telephone Number:</label>
+            <input id="tel" type="text">
+            <br>
+
+             <label for="email"> Email:</label>
+            <input id="email" type="text">
+            <br>
+            <label for="request">Delivery Instructions:</label> <br>
+            <textarea name="delreq" id="request" row="10" cols="30"> </textarea>
+
+        </fieldset>
+
+        <h3> Design your Dream Pizza: </h3>
+
+        <!-- PIZZA SPECS -->
+         <!-- (fieldset>legend)*3 -->
+         <fieldset>
+            <legend> Specification </legend>
+            <!-- CRUST -->
+            <fieldset>
+                <legend> Crust <em> (Choose one) </em> </legend>
+                <input type="radio" name="crust">
+                <label> Classic White</label>
+                <br>
+
+                <input type="radio" name="crust">
+                <label> Multigrain </label>
+                <br>
+
+                <input type="radio" name="crust">
+                <label > Cheese-stuffed crust</label>
+                <br>
+
+                <input type="radio" name="crust">
+                <label> Gluten-free</label>
+            </fieldset>
+
+            <!-- TOPPINGS -->
+            <fieldset>
+                <legend> Toppings <em> (Choose as many as you want)</em> </legend>
+                <input type="checkbox">
+                <label> Red Sauce </label>
+                <br>
+
+                <input type="checkbox">
+                <label> White Sauce </label>
+                <br>
+
+                <input type="checkbox">
+                <label> Mozzarella Cheese </label>
+                <br>
+
+                <input type="checkbox">
+                <label> Pepperoni </label>
+                <br>
+
+                <input type="checkbox">
+                <label> Mushrooms </label>
+                <br>
+
+                <input type="checkbox">
+                <label> Peppers </label>
+                <br>
+
+                <input type="checkbox">
+                <label> Pineapples </label>
+            </fieldset>
+
+            <!-- QUANTITY-->
+            <fieldset>
+                <legend> Quantity </legend>
+                <label> How many pizzas: </label>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </fieldset>
+            </fieldset>
+         </fieldset>
+
+         <input type="submit" value="Bring me a pizza!" class="button">
+         <input type="reset" class="button">
+        
+    </form>
+
+    <footer>
+        <p> Â© 2026 Veprim U. Dema</p>
+    </footer>
+
+</body>
+</html>
